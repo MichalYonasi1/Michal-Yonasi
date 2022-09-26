@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e1d0b4;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 600px){
+    .GridContainer{
+        display: grid;
+        grid-template-areas:
+        'Gheader'
+        'Gmain';
+    }
+}
+
+.GridHeader{
+    grid-area: "Gheader";
+    width: 1170px;
+    margin: auto;
+}
+
+.GridMain{
+    grid-area: "Gmain";
+}
+
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+.nav-area li{
+    display: inline-block;
+
+}
+
+.nav-area li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+
+.nav-area a:hover{
+    background: #fff;
+    color: #333;
+}
+
+.logo2 img{
+    width: 150px;
+    float: left;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+.header h1{
+    padding-left: 47%;
+    padding-top: 5%;
+    text-align: left;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header p{
+    padding-left: 40%;
+    text-align: left;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.sub-container{
+    padding-top: 5%;
+    text-align: center;
+}
+
+.header{
+    padding-top: 60px;
+    font-size: 20px;
+    margin: auto;
+    line-height: 50px;
+}
+
+.sub-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 48px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.steps{
+    margin: 10px;
+    padding: 22px;
+    max-width: 30%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.steps img{
+    width: 100px;
+    height: 100px;
+}
+
+.name{
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.about{
+    margin: 20px 0;
+    font-weight: bold;
+    color: #fff;
+} 

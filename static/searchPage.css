@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e1d0b4;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 600px){
+    .GridContainer{
+        display: grid;
+        grid-template-areas:
+        'Gheader'
+        'Gmain';
+    }
+}
+
+.GridHeader{
+    grid-area: "Gheader";
+    width: 1170px;
+    margin: auto;
+}
+
+.GridMain{
+    grid-area: "Gmain";
+}
+
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+.nav-area li{
+    display: inline-block;
+
+}
+
+.nav-area li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+
+.nav-area a:hover{
+    background: #fff;
+    color: #333;
+}
+
+.logo2 img{
+    width: 150px;
+    float: left;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+.search-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #603813;
+    height: 20px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.search-box input{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+
+}
+
+.search-btn{
+    color: #fff;
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #603813;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+
+
+}
+
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 20px;
+    width: 240px;
+
+
+}

@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e1d0b4;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    width: 1170px;
+    margin: auto;
+
+}
+
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+.nav-area li{
+    display: inline-block;
+
+}
+
+.nav-area li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+
+.nav-area a:hover{
+    background: #fff;
+    color: #333;
+}
+
+.logo2 img{
+    width: 150px;
+    float: left;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+
+.inputSignIn{
+    padding-left: 40%;
+    padding-top: 14%;
+    color: #603813;
+}
+
+.signInLogo img{
+    width: 45px;
+}
+
+.inputSignIn input{
+        font-size: 16px;
+        padding: 5px 24px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+}
+
+.inputSignIn form{
+    padding: 9px;
+    border: 9px solid white;
+    display: inline-block;
+}

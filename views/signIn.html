@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <title>Sign in page</title>
+    <link rel="stylesheet" type="text/css" href="../static/signIn.css">
+    <script defer src="../static/signIn.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo2"> <img src="../static/logo2.png" alt="logo1"> </div>
+            <ul class="nav-area">
+                <li> <a href="../views/main.html">Home</a> </li>
+                <li> <a href="../views/searchPage.html">Search</a> </li>
+                <li> <a href="../views/aboutUs.html">About</a> </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="inputSignIn">
+        <div class="signInLogo"> <img src="../static/logIn.png" alt="signInLogo"> </div>
+
+
+        <form name="regform" method="post" onsubmit="validateForm()">
+            <label for="email">Email</label><br>
+            <input type="email" placeholder="Enter your Email" required><br><br>
+            <i class="fa-light fa-envelope email-icon"></i>
+            <i class="fa-regular fa-octagon-check"></i>
+
+            <label for="password">Password</label><br>
+            <input type="email" placeholder="Enter your password" required><br><br>
+
+            <div class="error"></div>
+            <input type="submit" value="Log In"><br><br>
+    
+            <span class="psw">Forgot Password? <a href="../views/forgotPassword.html">Click Here</a></span><br><br>
+            <span class="psw">Need an acount? <a href="../views/signUp.html">SIGN UP</a></span>
+        </form>
+
+
+        
+    </div>
+
+    
+
+
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>

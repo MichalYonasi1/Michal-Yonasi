@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e1d0b4;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 600px){
+    .GridContainer{
+        display: grid;
+        grid-template-areas:
+        'Gheader'
+        'Gleft'
+        'Gfooter';
+    }
+}
+    
+
+.GridContainer{
+    display: grid;
+    grid-template-areas:
+    'Gheader'
+    'Gleft'
+    'Gfooter';
+}
+
+.GridHeader{
+    grid-area: "Gheader";
+    width: 1170px;
+    margin: auto;
+}
+
+.GridLeft{
+    grid-area: "Gleft";
+}
+
+.GridFooter{
+    grid-area: "Gfooter";
+}
+
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+.nav-area li{
+    display: inline-block;
+}
+
+.nav-area li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+
+.nav-area a:hover{
+    background: #fff;
+    color: #333;
+}
+
+.logo2 img{
+    width: 150px;
+    float: left;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+.welcome-text{
+    position: absolute;
+    margin: 15% 30%;
+    text-align: left;
+    
+}
+
+.welcome-text h1{
+    text-align: left;
+    font-size: 50px;
+}
+
+.welcome-text p{
+    text-align: left;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.welcome-text button{
+    font-size: 16px;
+    padding: 5px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    
+}
+
+.animation img{
+    width: 50px;
+    animation: animate 7s linear infinite;
+    
+}
+
+.animation{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    70%{
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.animation img:nth-child(1){
+    animation-delay: 2s;
+}
+
+.animation img:nth-child(2){
+    animation-delay: 1s;
+}
+
+.animation img:nth-child(3){
+    animation-delay: 3s;
+}
+
+.animation img:nth-child(4){
+    animation-delay: 4.5s;
+}
+
+
+
+
