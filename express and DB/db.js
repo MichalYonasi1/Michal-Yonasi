@@ -1,3 +1,16 @@
+const {createPool} = require('mysql');
+const pool = createPool({
+    host: "localhost",
+    user: "root",
+    password: "michRaz_1203",
+    connectionLimit: 10
+});
+
+pool.query('select * from michalyonasi.users', (err, res) => {
+    return console.log(res);
+}); 
+
+
 const mysql = require("mysql2");
 const dbConfig = require("./db.config.js");
 // Create a connection to the database
