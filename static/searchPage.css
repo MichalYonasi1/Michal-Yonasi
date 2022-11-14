@@ -60,7 +60,7 @@ body {
 
 .search-box{
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: #603813;
@@ -69,28 +69,28 @@ body {
     padding: 10px;
 }
 
-.table{
+.search-ingredients{
     position: absolute;
-    top: 60%;
-    left: 45%;
-    border-collapse: collapse;
-    border: 1px solid white;
-}
-
-table, th, td{
-    border-collapse: collapse;
-    border: 1px solid white;   
-}
-
-th, td{
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #603813;
+    height: 20px;
+    border-radius: 40px;
     padding: 10px;
 }
+
 
 .search-box input{
     font-family: 'Montserrat', sans-serif;
     color: #fff;
 
 }
+
+.search-ingredients input{
+    font-family: 'Montserrat', sans-serif;
+    color: black; 
+} 
 
 .search-btn{
     color: #fff;
@@ -120,4 +120,36 @@ th, td{
     width: 240px;
 
 
+}
+
+.searchByingredients-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 20px;
+    width: 240px;
+
+}
+
+table{
+    position: absolute;
+    top: 45%;
+    left: 44%;
+    border-collapse: collapse;
+    border: 1px white;
+ 
+}
+
+table, th, td{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th, td{
+    padding: 10px;
 }
